@@ -111,8 +111,13 @@ of Python being unsuitable to the task (in the author's opinion).
 - writing applications for mobile devices. VERY DIFFICULT. Possible (Google 'kivy' and 'beeware', but Here Be Dragons)
 
 Specific use cases for programming, with specific recommendations, now follow.
-{stubs for future content follow; keep in mind why a chemist would want to take a language up}
-{maybe state somewhere what languages you're including, based on some criterion such as StackOverflow annual surveys. Don't need to include the more fringe languages such as Kotlin, Haskell etc.}
+
+{stubs for future content follow; 
+keep in mind why a chemist would want to take a language up}
+
+{maybe state somewhere what languages you're including, 
+based on some criterion such as StackOverflow annual surveys. 
+Don't need to include the more fringe languages such as Kotlin, Haskell etc.}
 
 ### Data Collection, Cleaning, Processing, and Visualization
 
@@ -123,21 +128,32 @@ Specific use cases for programming, with specific recommendations, now follow.
 {python seems to be a clear winner here, but do some homework}
 
 ### Systems Programming and Scripting
-{bash; python; many of the C-like languages like Go, Rust, C++, Java(ew); probably not languages like Swift and C# that are closely tied to an OS. The lower the language level, the less noob-friendly}
+{bash; python; many of the C-like languages like Go, Rust, C++, Java(ew); 
+probably not languages like Swift and C# that are closely tied to an OS. 
+The lower the language level, the less noob-friendly}
 
 ### Instruments and Devices
 
-{Python still good here: Raspberry Pi, micropython, circuitpython etc.But e.g. C++ for Arduino, C for...?(do homework, IoT etc)}
+{Python still good here: Raspberry Pi, micropython, circuitpython etc.
+But e.g. C++ for Arduino, C for...?(do homework, IoT etc)}
 
 ### Numerical Computation
 
-{python good if e.g. vectorized numpy, CUDA etc. Do homework but probably c/c++/Rust/Julia/MATLAB. Zig?  Avoid proprietary, e.g. MATLAB. Probably Python > Julia > c++, Rust > field for a beginner scientist}
+{python good if e.g. vectorized numpy, CUDA etc. 
+Do homework but probably c/c++/Rust/Julia/MATLAB. Zig?  
+Avoid proprietary, e.g. MATLAB. 
+Probably Python > Julia > c++, Rust > field for a beginner scientist. FORTRAN is still great performance-wise but not something to recommend to a new programmer}
 
 ### Web
 
-{Python good if API e.g. FastAPI. Also Flask, Django. JavaScript for all things web; it's also beginner-friendly. Remember JS and electron apps for the Desktop Apps section.}
+{Python good if API e.g. FastAPI. Also Flask, Django. 
+JavaScript for all things web; it's also beginner-friendly. 
+Remember JS and electron apps for the Desktop Apps section.}
 {Note for mobile that a web app may be a better way to go than a native app using e.g. Swift on iOS or // on Android}
 
 ### Desktop Applications
 
-{python if you must; JS Electron; Java/c++?(ew). Personally don't recommend native-app languages e.g.Swift, C# unless you are a huge Mac or PC fan. REMEMBER THE CAUTIONARY TALE OF VISUAL BASIC 6.}
+{python if you must; JS Electron; Java/c++?(ew). 
+Personally don't recommend native-app languages e.g.Swift, C# 
+unless you are a huge Mac or PC fan. 
+REMEMBER THE CAUTIONARY TALE OF VISUAL BASIC 6.}
