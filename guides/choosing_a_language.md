@@ -3,6 +3,9 @@
 
 {This will initially be a long document, but later it can be chunked into multiple .md files with links or a TOC}
 
+{TODO: edit for 1st vs 3rd person consistency.
+If this will be collaborative, 3rd is better.}
+
 If you are interested in programming,
 but don't know where to start,
 answering the question "What programming language should I learn?" 
@@ -125,6 +128,8 @@ Specific use cases for programming, with specific recommendations, now follow.
 
 {stubs for future content follow; 
 keep in mind why a chemist would want to take a language up}
+
+{TODO: order list subjectively from most to least interest that most chemists would have in the activity}
 
 {maybe state somewhere what languages you're including, 
 based on some criterion such as StackOverflow annual surveys. 
