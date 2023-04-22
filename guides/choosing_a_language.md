@@ -3,9 +3,11 @@
 
 {This will initially be a long document, but later it can be chunked into multiple .md files with links or a TOC}
 
-"What programming language should I learn" 
-is a common question asked by people that are interested in programming, 
-but don't know where to start. 
+If you are interested in programming,
+but don't know where to start,
+answering the question "What programming language should I learn?" 
+is the first obstacle to overcome. 
+
 This is an (opinionated, non-authoritative) guide 
 to help people answer that question for themselves. 
 The author will try to make their personal opinions 
