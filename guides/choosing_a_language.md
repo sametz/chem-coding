@@ -74,9 +74,6 @@ int main(void) {
 }
 ```
 
-{Consider adding the "Pythonic French Deck" from the Fluent Python introduction, 
-or better yet adding it as code example}
-
 An honorable mention goes to 
 [the Julia programming language](https://julialang.org). 
 The author does not have Julia experience, 
@@ -214,8 +211,16 @@ what goes on "under the hood" of your computer.
 
 ### Instruments and Devices
 
-{Python still good here: Raspberry Pi, micropython, circuitpython etc.
-But e.g. C++ for Arduino, C for...?(do homework, IoT etc)}
+If you want to get started with devices, microcontrollers, 
+and Internet of Things (IoT) projects, Python is a good choice. 
+It's the default choice if you are working on a Raspberry Pi. 
+Many controllers can be programmed with Python 
+or a subset of Python (e.g. [CircuitPython](https://circuitpython.org)).
+
+[Arduino microcontrollers](https://www.arduino.cc) use a variant of c++ for their programs, but Python is also supported (via [MicroPython](https://docs.arduino.cc/learn/programming/arduino-and-python)).
+
+It's not possible to generalize across scientific instrumentation,
+but you may find low-level languages like c being used. 
 
 ### Numerical Computation
 
@@ -224,12 +229,56 @@ Do homework but probably c/c++/Rust/Julia/MATLAB. Zig?
 Avoid proprietary, e.g. MATLAB. 
 Probably Python > Julia > c++, Rust > field for a beginner scientist. FORTRAN is still great performance-wise but not something to recommend to a new programmer}
 
-### Web
+Even though Python is a slow language, 
+it can make use of libraries that run faster code 
+(e.g. FORTRAN, c) "under the hood". 
+An example of this is 
+[the `numpy` library](https://numpy.org) for numerical computation. 
+With optimization, Python can often be fast enough for your needs. 
 
-{Python good if API e.g. FastAPI. Also Flask, Django. 
-JavaScript for all things web; it's also beginner-friendly. 
-Remember JS and electron apps for the Desktop Apps section.}
-{Note for mobile that a web app may be a better way to go than a native app using e.g. Swift on iOS or // on Android}
+There are libraries that can help speed up your code, 
+e.g. by [implementing "just-in-time" compiling](https://numba.pydata.org) 
+or [GPU acceleration](https://cupy.dev).
+There is also a version of Python, 
+[PyPy](https://www.pypy.org), that runs faster than standard Python. 
+
+If your code needs to run faster than Python is capable of, here are some alternatives to consider:
+
+- Julia 
+- MATLAB is widely used by scientists and engineers, 
+  but it's proprietary. 
+  If your workplace has bought a license for it, 
+  and you do a lot of numerical work (e.g. linear algebra), 
+  it can be very useful. 
+- You could consider the "curly-brace" languages such as c/c++, 
+- but the learning curve will be steeper. 
+  If others in your field use one of these languages, 
+  it may be worth it.
+
+### Web Programming
+
+If your primary interest in things Web-related 
+(creating web pages, webservers, online databases etc.), 
+JavaScript (JS) is ubiquitous in Web programming. 
+It is also a great choice for a first language to learn. 
+It can be used for both "front-end" web development 
+(writing JS/HTML/CSS code for display in a web browser), 
+and in "back-end" development (setting up a web server). 
+Most beginners will be interested in the front-end work of creating a website, and let a web hosting service take care of the back end.
+
+Python is also a good choice, especially for back-end work.
+Popular web frameworks include Flask, Django, and FastAPI. 
+For example, 
+if you have data in a database
+that you want to make available over the internet, 
+you can use one of these frameworks 
+to create a web API (Application Programming Interface) 
+that will let people around the world access and use your data.
+
+If you are not programming in a language that is native to mobile devices
+(e.g Swift for iOS or Java for Android),
+another way to get your program onto users' phones
+is to create a web application.
 
 ### Desktop Applications
 
