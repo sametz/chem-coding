@@ -1,7 +1,8 @@
 # How to Choose a Programming Language
 ## For Chemists and the Chemistry-Adjacent
 
-{This will initially be a long document, but later it can be chunked into multiple .md files with links or a TOC}
+{This will initially be a long document, but later it can be chunked into multiple .md files with links or a TOC.
+See [this guide](https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README.md) for an example of a TOC and general organization.}
 
 {TODO: edit for 1st vs 3rd person consistency.
 If this will be collaborative, 3rd is better.}
