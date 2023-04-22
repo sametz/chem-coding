@@ -73,7 +73,14 @@ int main(void) {
 {Consider adding the "Pythonic French Deck" from the Fluent Python introduction, 
 or better yet adding it as code example}
 
-An honorable mention goes to [the Julia programming language](https://julialang.org). The author does not have Julia experience, and the Julia community is much smaller than the Python community. However, it is a multi-purpose language that seems particularly well-suited for scientific computing, data science and visualization, machine learning and numerical computation. It is also much faster than Python, if computation speed is a concern.
+An honorable mention goes to 
+[the Julia programming language](https://julialang.org). 
+The author does not have Julia experience, 
+and the Julia community is much smaller than the Python community. 
+However, it is a multi-purpose language 
+that seems particularly well-suited for scientific computing, 
+data science and visualization, machine learning and numerical computation. 
+It is also much faster than Python, if computation speed is a concern.
 
 #### When might "Python" not be the best answer?
 
@@ -145,7 +152,7 @@ Other considerations:
 
 ### ML/AI
 
-{python seems to be a clear winner here, but do some homework}
+You will find more ML/AI resources that use Python than any other language. There is a lot to learn in this field, so my suggestion is start learning using Python to get up to speed before considering another language.
 
 ### Systems Programming and Scripting
 {bash; python; many of the C-like languages like Go, Rust, C++, Java(ew); 
