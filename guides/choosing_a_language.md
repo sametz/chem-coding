@@ -159,6 +159,40 @@ You will find more ML/AI resources that use Python than any other language. Ther
 probably not languages like Swift and C# that are closely tied to an OS. 
 The lower the language level, the less noob-friendly}
 
+If your interest is working with the nuts and bolts of a computer system
+(working with files and directories, scheduling automated tasks, etc.)
+then Python is a great place to start. 
+There is even 
+[a book written about automating tasks with Python](https://automatetheboringstuff.com).
+
+It is also extremely useful for programmers in general 
+to learn how to use the command line interface ('CLI'; 'terminal'). 
+On Unix-like systems (macOS; linux) this means learning bash 
+or a closely-related variant 
+(Macs recently switched from bash to zsh, but they are mostly the same). 
+Windows comes with PowerShell, but you can install a bash CLI as well.
+
+As a motivational example, here is a one-line command that will: 
+- recursively search through a tree of nested NMR data folders; 
+- find the temperature each experiment was run at; and 
+- save a .csv that lists all NMR jobs and temperatures:
+
+```bash
+$ grep -r "##\$TE=" --include="*acqus" . | cut -c 3- | sort | sed -e 's/:##\$TE= /,/' > T_pH7.csv
+```
+
+That may look incomprehensible, 
+but it's composed from several individual bash commands 
+that you would learn in any basic bash guide. 
+With very little bash experience, 
+I could accomplish in one terminal command 
+what would require many lines of Python or equivalent code.
+
+Both Python and Bash are widely used for writing executable "scripts" 
+to automate common tasks.
+
+{TODO: add curly-brace languages}
+
 ### Instruments and Devices
 
 {Python still good here: Raspberry Pi, micropython, circuitpython etc.
