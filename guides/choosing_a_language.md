@@ -125,6 +125,21 @@ Don't need to include the more fringe languages such as Kotlin, Haskell etc.}
 
 {python, R, SQL}
 
+Python and [R](https://www.tidyverse.org/) are excellent choices. 
+
+An advantage of R is that there is a 
+"[tidyverse](https://www.tidyverse.org/)" of widely-adopted packages, 
+where there is a clear favorite way to do something, 
+such as make a plot or a web application. A disadvantage is that is focused on working with data.
+
+Python has the advantage of being useful in many contexts beyond data science. However, you may find yourself spoiled for choice when selecting tools, e.g. what library to use for plotting graphs. 
+
+Other considerations:
+
+- [SQL(structured query language)](https://en.wikipedia.org/wiki/SQL): 
+  If you find yourself needing to work with databases, adding some SQL knowledge on top of your preferred programming language will be useful. 
+- {TODO: placeholder}
+
 ### ML/AI
 
 {python seems to be a clear winner here, but do some homework}
