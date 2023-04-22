@@ -196,7 +196,20 @@ what would require many lines of Python or equivalent code.
 Both Python and Bash are widely used for writing executable "scripts" 
 to automate common tasks.
 
-{TODO: add curly-brace languages}
+There is a large family of "curly-brace" languages 
+that are all good "professional programmer" choices for system programming: 
+c++, Go, Java, Rust, etc. 
+However, the author's advice is to avoid languages that are so "low-level" 
+that you have to constantly consider fussy things, such as:
+- where and how variables are stored in memory and accessed; 
+- how to manage memory allocation;
+- determining "which one of these nine types of integers is best 
+  to represent my number?". 
+
+However, if you really want to learn programming 
+from the viewpoint of a computer scientist or a software engineer, 
+a language such as c/c++ will make you learn 
+what goes on "under the hood" of your computer.
 
 ### Instruments and Devices
 
