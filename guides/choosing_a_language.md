@@ -31,7 +31,7 @@ intellectually stimulating, or fun.
 If that is the case, 
 the author's *opinionated* answer is:
 
-<center>**Python.**</center>
+**<p align=center>Python.</p>**
 
 Python has been described as being "the second-best language for everything".
 In particular, it's a top-tier language for data processing and visualization, 
@@ -69,4 +69,6 @@ int main(void) {
 {Consider adding the "Pythonic French Deck" from the Fluent Python introduction, 
 or better yet adding it as code example}
 
-There are a few
+#### When might "Python" not be the best answer?
+
+There are a few applications where Python is **not** a top-tier choice. It may be *possible* to accomplish in Python, but inefficient, awkward, difficult, or requiring arcane knowledge. The following list is in roughly increasing order of Python being unsuitable to the task.

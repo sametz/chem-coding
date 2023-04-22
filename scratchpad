@@ -1,0 +1,11 @@
+Drafts folder mirroring structure seems clumsy.
+Probably use a "Drafts" branch then push to main when good enough.
+
+Name of repo? 
+If thinking of CFC, will be guides and tutorials/small code examples.
+Don't create GH repo until you've settled on these things.
+
+resources: awesome x type lists
+how_to: step by step guides on how to do common tasks
+guides: e.g. how to choose a language to learn
+example_code: scripts or small programs (or links to them)
