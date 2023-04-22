@@ -73,6 +73,8 @@ int main(void) {
 {Consider adding the "Pythonic French Deck" from the Fluent Python introduction, 
 or better yet adding it as code example}
 
+{TODO: find a place to mention Julia, which could be another great all-round language for scientists}
+
 #### When might "Python" not be the best answer?
 
 {This section is indulgent, too wordy, and most likely redundant with the application-specific sections to follow. For now, I'll vent my opinions and then re-write to something useful to others, and to-the-point }
@@ -123,8 +125,6 @@ Don't need to include the more fringe languages such as Kotlin, Haskell etc.}
 
 ### Data Collection, Cleaning, Processing, and Visualization
 
-{python, R, SQL}
-
 Python and [R](https://www.tidyverse.org/) are excellent choices. 
 
 An advantage of R is that there is a 
@@ -136,9 +136,12 @@ Python has the advantage of being useful in many contexts beyond data science. H
 
 Other considerations:
 
+- Julia 
 - [SQL(structured query language)](https://en.wikipedia.org/wiki/SQL): 
   If you find yourself needing to work with databases, adding some SQL knowledge on top of your preferred programming language will be useful. 
-- {TODO: placeholder}
+- See also 
+  [this article on Codecademy](https://www.codecademy.com/resources/blog/data-science-languages/) 
+  describing these and other options.
 
 ### ML/AI
 
