@@ -4,8 +4,13 @@
 {This will initially be a long document, but later it can be chunked into multiple .md files with links or a TOC.
 See [this guide](https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README.md) for an example of a TOC and general organization.}
 
-{TODO: edit for 1st vs 3rd person consistency.
-If this will be collaborative, 3rd is better.}
+{constantly re-evaluate and re-write with the target audience in mind. This is for them, not you.}
+
+{maybe state somewhere what languages you're including, 
+based on some criterion such as StackOverflow annual surveys. 
+Don't need to include the more fringe languages such as Kotlin, Haskell etc.}
+
+### Introduction
 
 If you are interested in programming,
 but don't know where to start,
@@ -29,9 +34,12 @@ If you spend some time learning one language, and decide to try another,
 you will have the pieces in place to pick up the next language 
 and start working with it.
 
-### What are you most interested in?
+This guide is structured around the likely answers to that question:
 
-This guide is structured around the likely answers to that question.
+**<p align=center>Why are you interested in programming?</p>**
+
+### General Purpose
+
 Most of this guide will be for people that already have some idea 
 of what they want to do with their new coding superpowers.
 However, maybe you just think coding sounds useful, 
@@ -73,27 +81,11 @@ int main(void) {
     return EXIT_SUCCESS;
 }
 ```
-
-An honorable mention goes to 
-[the Julia programming language](https://julialang.org). 
-The author does not have Julia experience, 
-and the Julia community is much smaller than the Python community. 
-However, it is a multi-purpose language 
-that seems particularly well-suited for scientific computing, 
-data science and visualization, machine learning and numerical computation. 
-It is also much faster than Python, if computation speed is a concern.
-
 #### When might "Python" not be the best answer?
 
-{This section is indulgent, too wordy, and most likely redundant with the application-specific sections to follow. For now, I'll vent my opinions and then re-write to something useful to others, and to-the-point }
+The following situations can be problematic with Python, to varying degrees.
 
-There are a few applications where Python is **not** a top-tier choice. 
-It may be *possible* to accomplish in Python, 
-but inefficient, awkward, difficult, or requiring arcane knowledge. 
-The following list is in roughly increasing order 
-of Python being unsuitable to the task (in the author's opinion).
-
-- running on multiple CPUs ("multithreading"): 
+- Running on multiple CPUs ("multithreading"): 
   this is possible, but Python has the notorious 
   [Global Interpreter Lock (GIL)](https://www.python.org/) 
   that makes this cumbersome.
@@ -108,30 +100,27 @@ of Python being unsuitable to the task (in the author's opinion).
   that your speed is limited by how long the wire is 
   between your computer and the stock exchange across the street, 
   you don't want to be using Python.
-- creating cross-platform desktop applications. 
-  This is very doable, but Python has to use non-Python GUIs 
-  via libraries such as `tkinter` or`PySides/PyQt`. 
-  These libraries inherit the quirks of their original languages, 
-  such as C++, and don't have a "pythonic" feel. 
-  There are many examples of "toy" Python apps online, 
-  but for more complicated applications you'll find less guidance.
-- packaging cross-platform applications 
-  as a one-file "MyAwesomeApp.exe" or "MyAwesomeApp.app" program, 
-  that another person can just download, double-click, and run.
-  The difficulty ranges from "a bit of fuss required" 
-  to "well-nigh impossible without arcane knowledge".
-- writing applications for mobile devices. VERY DIFFICULT. Possible (Google 'kivy' and 'beeware', but Here Be Dragons)
+- creating cross-platform desktop applications 
+  that you can distribute to non-programmer friends. 
+  This is doable, especially for small applications,
+  but can get tricky as your application gets more complicated.
+  Third-party tools are required 
+  to bundle your python code as a one-file application.
+- writing applications for mobile devices. VERY DIFFICULT. 
+  Possible (e.g. with [kivy](https://kivy.org) or [BeeWare](https://beeware.org), but Here Be Dragons)
 
-Specific use cases for programming, with specific recommendations, now follow.
+An honorable mention goes to 
+[the Julia programming language](https://julialang.org). 
+The author does not have Julia experience, 
+and the Julia community is much smaller than the Python community. 
+However, it is a multi-purpose language 
+that seems particularly well-suited for scientific computing, 
+data science and visualization, machine learning and numerical computation. 
+It is also much faster than Python, if computation speed is a concern.
 
-{stubs for future content follow; 
-keep in mind why a chemist would want to take a language up}
+A final consideration is JavaScript (plus HTML and css), which is useful in many of the contexts listed later in this guide. 
 
 {TODO: order list subjectively from most to least interest that most chemists would have in the activity}
-
-{maybe state somewhere what languages you're including, 
-based on some criterion such as StackOverflow annual surveys. 
-Don't need to include the more fringe languages such as Kotlin, Haskell etc.}
 
 ### Data Collection, Cleaning, Processing, and Visualization
 
@@ -155,7 +144,7 @@ Other considerations:
 
 ### ML/AI
 
-You will find more ML/AI resources that use Python than any other language. There is a lot to learn in this field, so my suggestion is start learning using Python to get up to speed before considering another language.
+You will find more ML/AI resources that use Python than any other language. There is a lot to learn in this field, so the author's suggestion is start learning using Python to get up to speed before considering another language.
 
 ### Systems Programming and Scripting
 {bash; python; many of the C-like languages like Go, Rust, C++, Java(ew); 
