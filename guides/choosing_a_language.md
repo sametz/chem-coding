@@ -356,6 +356,14 @@ which is an Electron app.
 Other examples of Electron apps that you may be familiar with include: 
 Discord, Dropbox, Slack, GitHub Desktop, and Microsoft Teams. 
 
+Simple desktop applications in Python are not too difficult, 
+but as the complexity goes up you may run into difficulties. 
+You will need to choose a GUI framework and learn how to use it, 
+and then you will need to use a tool to create the one-file application bundle. 
+These applications basically copy an entire Python environment into the bundle, 
+so a Python app tends to take up much more memory on a hard drive 
+than a similar program written in a compiled language.
+
 In the less-beginner-friendly category, Java and c++ are commonly used to write cross-platform applications. 
 
 #### Mobile Applications
