@@ -127,7 +127,7 @@ int main(void) {
   Third-party tools are required 
   to bundle your python code as a one-file application.
 >- writing applications for mobile devices. VERY DIFFICULT. 
-  Possible (e.g. with [kivy](https://kivy.org) or [BeeWare](https://beeware.org), but Here Be Dragons)
+  Possible (e.g. with [kivy](https://kivy.org) or [BeeWare](https://beeware.org), but Here Be Dragons.
 
 An honorable mention goes to 
 [the Julia programming language](https://julialang.org). 
@@ -147,7 +147,7 @@ Python and [R](https://www.tidyverse.org/) are excellent choices.
 An advantage of R is that there is a 
 "[tidyverse](https://www.tidyverse.org/)" of widely-adopted packages, 
 where there is a clear favorite way to do something, 
-such as make a plot or a web application. A disadvantage is that is focused on working with data.
+such as make a plot or a web application. A disadvantage is that is focused on working with data, so e.g. you wouldn't write a desktop application in R.
 
 Python has the advantage of being useful in many contexts beyond data science. However, you may find yourself spoiled for choice when selecting tools, e.g. what library to use for plotting graphs. 
 
