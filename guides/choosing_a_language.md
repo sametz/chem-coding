@@ -4,6 +4,24 @@
 {This will initially be a long document, but later it can be chunked into multiple .md files with links or a TOC.
 See [this guide](https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README.md) for an example of a TOC and general organization.}
 
+### Table of Contents
+
+- [How to Choose a Programming Language](#how-to-choose-a-programming-language)
+  - [For Chemists and the Chemistry-Adjacent](#for-chemists-and-the-chemistry-adjacent)
+    - [Table of Contents](#table-of-contents)
+    - [Introduction](#introduction)
+    - [General Purpose Programming Languages](#general-purpose-programming-languages)
+    - [Data Collection, Cleaning, Processing, and Visualization](#data-collection-cleaning-processing-and-visualization)
+    - [Machine Learning and Artificial Intelligence](#machine-learning-and-artificial-intelligence)
+    - [Systems Programming and Scripting](#systems-programming-and-scripting)
+    - [Instruments and Devices](#instruments-and-devices)
+    - [Numerical Computation](#numerical-computation)
+    - [Web Programming](#web-programming)
+    - [GUI Applications](#gui-applications)
+      - [Distributing Applications](#distributing-applications)
+      - [Desktop Applictions](#desktop-applictions)
+      - [Mobile Applications](#mobile-applications)
+
 {constantly re-evaluate and re-write with the target audience in mind. This is for them, not you.}
 
 {maybe state somewhere what languages you're including, 
@@ -25,7 +43,7 @@ Corrections and additions to this guide are welcome!
 
 This guide will mention the most commonly-encountered languages 
 that are either particularly useful to chemists, 
-or are particularly well suited for new programmers to get their feet wet.
+or are particularly well suited for people just starting to learn programming.
 
 Whatever language you choose, 
 once you dive into it you will also learn all sorts of tools, skills and habits 
@@ -38,7 +56,7 @@ This guide is structured around the likely answers to that question:
 
 **<p align=center>Why are you interested in programming?</p>**
 
-### General Purpose
+### General Purpose Programming Languages
 
 Most of this guide will be for people that already have some idea 
 of what they want to do with their new coding superpowers.
@@ -81,15 +99,15 @@ int main(void) {
     return EXIT_SUCCESS;
 }
 ```
-#### When might "Python" not be the best answer?
-
-The following situations can be problematic with Python, to varying degrees.
-
-- Running on multiple CPUs ("multithreading"): 
+>#### When might "Python" not be the best answer?
+>
+>The following situations can be problematic with Python, to varying degrees.
+>
+>- Running on multiple CPUs ("multithreading"): 
   this is possible, but Python has the notorious 
   [Global Interpreter Lock (GIL)](https://www.python.org/) 
   that makes this cumbersome.
-- speed-critical applications: Python is a slow language. 
+>- speed-critical applications: Python is a slow language. 
   However, it can interface with faster languages. 
   For example, the widely-used `numpy` libary for numerical computation 
   uses Fortran libraries "under the hood", 
@@ -100,13 +118,13 @@ The following situations can be problematic with Python, to varying degrees.
   that your speed is limited by how long the wire is 
   between your computer and the stock exchange across the street, 
   you don't want to be using Python.
-- creating cross-platform desktop applications 
+>- creating cross-platform desktop applications 
   that you can distribute to non-programmer friends. 
   This is doable, especially for small applications,
   but can get tricky as your application gets more complicated.
   Third-party tools are required 
   to bundle your python code as a one-file application.
-- writing applications for mobile devices. VERY DIFFICULT. 
+>- writing applications for mobile devices. VERY DIFFICULT. 
   Possible (e.g. with [kivy](https://kivy.org) or [BeeWare](https://beeware.org), but Here Be Dragons)
 
 An honorable mention goes to 
@@ -140,7 +158,7 @@ Other considerations:
   [this article on Codecademy](https://www.codecademy.com/resources/blog/data-science-languages/) 
   describing these and other options.
 
-### ML/AI
+### Machine Learning and Artificial Intelligence 
 
 You will find more ML/AI resources that use Python than any other language. There is a lot to learn in this field, so the author's suggestion is start learning using Python to get up to speed before considering another language.
 
