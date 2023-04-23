@@ -328,7 +328,7 @@ and mobile apps possible as well,
 whereas Swift's primary focus is macOS applications.
 
 {TODO: if you find you can't resist injecting subjective opionions,
-consider making clickable footnotes to make it easy for the reader to dissmiss you.}
+consider making clickable footnotes to make it easy for the reader to dissmiss you. Check Hynek's blogs for examples. https://hynek.me/articles/}
 
 > The author has a bias against heavy investment in a language 
 > that can depends on a parent company for its existence. 
@@ -347,6 +347,16 @@ consider making clickable footnotes to make it easy for the reader to dissmiss y
 > but go in with eyes open.
 
 {non-platform suggestions will go here, e.g. JS Electron, Java. Python possible but tricky to package}
+
+If you are also interested in web programming as well, 
+[Electron apps written with JavaScript](https://www.electronjs.org) 
+are a great solution. 
+The author wrote this guide using Microsoft's VS Code, 
+which is an Electron app. 
+Other examples of Electron apps that you may be familiar with include: 
+Discord, Dropbox, Slack, GitHub Desktop, and Microsoft Teams. 
+
+In the less-beginner-friendly category, Java and c++ are commonly used to write cross-platform applications. 
 
 #### Mobile Applications
 
