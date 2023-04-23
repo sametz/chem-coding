@@ -162,6 +162,8 @@ You will find more ML/AI resources that use Python than any other language. Ther
 probably not languages like Swift and C# that are closely tied to an OS. 
 The lower the language level, the less noob-friendly}
 
+{TODO: section for command-line applications?}
+
 If your interest is working with the nuts and bolts of a computer system
 (working with files and directories, scheduling automated tasks, etc.)
 then Python is a great place to start. 
@@ -278,11 +280,75 @@ that will let people around the world access and use your data.
 If you are not programming in a language that is native to mobile devices
 (e.g Swift for iOS or Java for Android),
 another way to get your program onto users' phones
-is to create a web application.
+is to create a web application. 
+Then, any device with a web browser would have access to your app.
 
-### Desktop Applications
+### GUI Applications
 
 {python if you must; JS Electron; Java/c++?(ew). 
 Personally don't recommend native-app languages e.g.Swift, C# 
 unless you are a huge Mac or PC fan. 
 REMEMBER THE CAUTIONARY TALE OF VISUAL BASIC 6.}
+
+If you want to create an application with a graphical user interface (GUI),
+many languages will allow you to do this, including Python.
+If your *primary* interest in programming 
+is that you want to create a desktop or mobile application, read on.
+
+#### Distributing Applications
+
+Some desktop programs come bundled in a single file. 
+For example, 
+you might download the file and drag it to your Applications folder, 
+and then double-click it to run. 
+Other programs run an installer 
+to set up the required files on your user's system. 
+If you are not a professional programmer, 
+the one-file app is probably easier, 
+and certainly safer for your intended user.
+However, some languages make bundling your program 
+as a one-file desktop application easier than others. 
+
+If you want to create a mobile application, 
+you first have to consider if you want to target iOS, android, or both. 
+Then, you have to consider the limitations of developing on that platform. 
+For example, on iOS you will need to create a developer account. 
+If you want other people to use your application on their iPhone, 
+you'll need to pay Apple money and get a digital signature for verification.
+
+#### Desktop Applictions
+
+If you want to create an application 
+that has the native look and feel of your favorite operating system 
+(macOS or Windows), 
+your main choices are Swift on macOS and C# ("C-sharp") on Windows. 
+The author doesn't have much experience with these languages. 
+However, C# and Microsoft's .NET platform make cross-platform 
+and mobile apps possible as well, 
+whereas Swift's primary focus is macOS applications.
+
+{TODO: if you find you can't resist injecting subjective opionions,
+consider making clickable footnotes to make it easy for the reader to dissmiss you.}
+
+> The author has a bias against heavy investment in a language 
+> that can depends on a parent company for its existence. 
+> For example, Apple could decide that they're dropping Swift 
+> as the preferred language for their platforms. 
+> Java's corporate sponsor, Oracle, 
+> has engaged in shady practices in the past, including 
+> [update installer that would try to install unwanted applications ('bloatware' or 'crapware) on its users' systems](https://www.zdnet.com/article/a-close-look-at-how-oracle-installs-deceptive-software-with-java-updates/).
+> Visual Basic 6 (VB6) was very popular, 
+> allowing scientists, business people and hobbyists to create 
+> their own Windows applications. 
+> Microsoft's shift to the .NET platform 
+> effectively orphaned any development of VB6 programs.
+>
+> Using one of these languages can still be the right choice for you,
+> but go in with eyes open.
+
+{non-platform suggestions will go here, e.g. JS Electron, Java. Python possible but tricky to package}
+
+#### Mobile Applications
+
+{Do some more homework for macOS and android. Also point out extreme difficulty with Python, but mention BeeWare. Mention progressive web applications.}
+
