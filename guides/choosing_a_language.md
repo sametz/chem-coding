@@ -1,8 +1,7 @@
 # How to Choose a Programming Language
 ## For Chemists and the Chemistry-Adjacent
 
-{This will initially be a long document, but later it can be chunked into multiple .md files with links or a TOC.
-See [this guide](https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README.md) for an example of a TOC and general organization.}
+{TODO: constantly re-evaluate and re-write with the target audience in mind. This is for them, not you.}
 
 ### Table of Contents
 
@@ -21,12 +20,8 @@ See [this guide](https://github.com/luong-komorebi/Markdown-Tutorial/blob/master
       - [Distributing Applications](#distributing-applications)
       - [Desktop Applictions](#desktop-applictions)
       - [Mobile Applications](#mobile-applications)
+    - [Conclusion](#conclusion)
 
-{constantly re-evaluate and re-write with the target audience in mind. This is for them, not you.}
-
-{maybe state somewhere what languages you're including, 
-based on some criterion such as StackOverflow annual surveys. 
-Don't need to include the more fringe languages such as Kotlin, Haskell etc.}
 
 ### Introduction
 
@@ -45,8 +40,12 @@ This guide will mention the most commonly-encountered languages
 that are either particularly useful to chemists, 
 or are particularly well suited for people just starting to learn programming.
 
+{TODO: maybe state somewhere what languages you're including, 
+based on some criterion such as StackOverflow annual surveys. 
+Don't need to include the more fringe languages such as Haskell etc.}
+
 Whatever language you choose, 
-once you dive into it you will also learn all sorts of tools, skills and habits 
+once you dive into it you will also learn tools, skills and habits 
 that are not language-specific. 
 If you spend some time learning one language, and decide to try another, 
 you will have the pieces in place to pick up the next language 
@@ -60,8 +59,8 @@ This guide is structured around the likely answers to that question:
 
 Most of this guide will be for people that already have some idea 
 of what they want to do with their new coding superpowers.
-However, maybe you just think coding sounds useful, 
-intellectually stimulating, or fun. 
+However, maybe you just think coding sounds generally useful, 
+interesting, or fun. 
 If that is the case, 
 the author's *opinionated* answer is:
 
@@ -71,13 +70,16 @@ Python has been described as being "the second-best language for everything".
 In particular, it's a top-tier language for data processing and visualization, 
 machine learning (ML), and artificial intelligence (AI).
 There is a huge ecosystem of scientific and numeric packages for Python as well.
+
 Plus, (in the author's opinion), Python is easy to pick up 
 and start doing useful things with. 
 The language is *expressive*, almost reading like "pseudo-code" at times. 
 For example, let's say you wanted to tell the computer:
 
+```text
 "for each name in my list of guests: Amy, Bob, Cathy and Doug,
 print "Hi, (name of guest!)"
+```
 
 This is what it would look like in Python:
 
@@ -163,25 +165,27 @@ Other considerations:
 You will find more ML/AI resources that use Python than any other language. There is a lot to learn in this field, so the author's suggestion is start learning using Python to get up to speed before considering another language.
 
 ### Systems Programming and Scripting
-{bash; python; many of the C-like languages like Go, Rust, C++, Java(ew); 
-probably not languages like Swift and C# that are closely tied to an OS. 
-The lower the language level, the less noob-friendly}
 
 {TODO: section for command-line applications?}
 
 If your interest is working with the nuts and bolts of a computer system
-(working with files and directories, scheduling automated tasks, etc.)
-then Python is a great place to start. 
-There is even 
-[a book written about automating tasks with Python](https://automatetheboringstuff.com).
+(working with files and directories, scheduling automated tasks, etc.),
+Python is a great place to start. 
+There is a popular 
+[book written about automating tasks with Python](https://automatetheboringstuff.com). 
+It's a good resource for both learning Python and finding ideas for projects.
 
-It is also extremely useful for programmers in general 
-to learn how to use the command line interface ('CLI'; 'terminal'). 
+Whatever programming language you choose,
+you will need to learn how to use the command line interface 
+('CLI'; 'terminal'). 
 On Unix-like systems (macOS; linux) this means learning bash 
 or a closely-related variant 
 (Macs recently switched from bash to zsh, but they are mostly the same). 
 Windows comes with PowerShell, but you can install a bash CLI as well.
 
+Basic commands such as navigating a directory, creating files and folders, 
+and running your programs can be learned in minutes.
+If you dig deeper, the command line can be extremely powerful.
 As a motivational example, here is a one-line command that will: 
 - recursively search through a tree of nested NMR data folders; 
 - find the temperature each experiment was run at; and 
@@ -231,11 +235,6 @@ but you may find low-level languages like c being used.
 
 ### Numerical Computation
 
-{python good if e.g. vectorized numpy, CUDA etc. 
-Do homework but probably c/c++/Rust/Julia/MATLAB. Zig?  
-Avoid proprietary, e.g. MATLAB. 
-Probably Python > Julia > c++, Rust > field for a beginner scientist. FORTRAN is still great performance-wise but not something to recommend to a new programmer}
-
 Even though Python is a slow language, 
 it can make use of libraries that run faster code 
 (e.g. FORTRAN, c) "under the hood". 
@@ -258,7 +257,7 @@ If your code needs to run faster than Python is capable of, here are some altern
   and you do a lot of numerical work (e.g. linear algebra), 
   it can be very useful. 
 - You could consider the "curly-brace" languages such as c/c++, 
-- but the learning curve will be steeper. 
+  but the learning curve will be steeper. 
   If others in your field use one of these languages, 
   it may be worth it.
 
@@ -289,11 +288,6 @@ is to create a web application.
 Then, any device with a web browser would have access to your app.
 
 ### GUI Applications
-
-{python if you must; JS Electron; Java/c++?(ew). 
-Personally don't recommend native-app languages e.g.Swift, C# 
-unless you are a huge Mac or PC fan. 
-REMEMBER THE CAUTIONARY TALE OF VISUAL BASIC 6.}
 
 If you want to create an application with a graphical user interface (GUI),
 many languages will allow you to do this, including Python.
@@ -351,8 +345,6 @@ consider making clickable footnotes to make it easy for the reader to dissmiss y
 > Using one of these languages can still be the right choice for you,
 > but go in with eyes open.
 
-{non-platform suggestions will go here, e.g. JS Electron, Java. Python possible but tricky to package}
-
 If you are also interested in web programming as well, 
 [Electron apps written with JavaScript](https://www.electronjs.org) 
 are a great solution. 
@@ -375,10 +367,17 @@ In the less-beginner-friendly category, Java and c++ are commonly used to write 
 
 The author doesn't recommend first-time programmers learning a language focused on mobile development. That said:
 
-For iOS, Swift is the language of choice.
+- For iOS, Swift is the language of choice.
 
-For android:
+- For android:
+  - Java is the historical choice
+  - Kotlin has become very popular for android development
+  - other c++-like languages are also supported
 
-- Java is the historical choice
-- Kotlin has become very popular for android development
-- other c++-like languages are also supported
+### Conclusion
+
+The journey of a thousand miles starts with a single step.
+This guide hopefully helps you take a step in the right direction.
+Even if you decide that a programming language is not for you, 
+hopefully your interest in programming is now kindled,
+and the guide can help you retrace your steps and set out again. 😄
