@@ -368,5 +368,12 @@ In the less-beginner-friendly category, Java and c++ are commonly used to write 
 
 #### Mobile Applications
 
-{Do some more homework for macOS and android. Also point out extreme difficulty with Python, but mention BeeWare. Mention progressive web applications.}
+The author doesn't recommend first-time programmers learning a language focused on mobile development. That said:
 
+For iOS, Swift is the language of choice.
+
+For android:
+
+- Java is the historical choice
+- Kotlin has become very popular for android development
+- other c++-like languages are also supported
