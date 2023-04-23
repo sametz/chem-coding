@@ -120,8 +120,6 @@ It is also much faster than Python, if computation speed is a concern.
 
 A final consideration is JavaScript (plus HTML and css), which is useful in many of the contexts listed later in this guide. 
 
-{TODO: order list subjectively from most to least interest that most chemists would have in the activity}
-
 ### Data Collection, Cleaning, Processing, and Visualization
 
 Python and [R](https://www.tidyverse.org/) are excellent choices. 
@@ -179,8 +177,8 @@ That may look incomprehensible,
 but it's composed from several individual bash commands 
 that you would learn in any basic bash guide. 
 With very little bash experience, 
-I could accomplish in one terminal command 
-what would require many lines of Python or equivalent code.
+the author could accomplish in one terminal command 
+a task that would require many lines of Python or equivalent code.
 
 Both Python and Bash are widely used for writing executable "scripts" 
 to automate common tasks.
@@ -188,7 +186,7 @@ to automate common tasks.
 There is a large family of "curly-brace" languages 
 that are all good "professional programmer" choices for system programming: 
 c++, Go, Java, Rust, etc. 
-However, the author's advice is to avoid languages that are so "low-level" 
+The author's advice is to avoid languages that are so "low-level" 
 that you have to constantly consider fussy things, such as:
 - where and how variables are stored in memory and accessed; 
 - how to manage memory allocation;
