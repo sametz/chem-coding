@@ -276,11 +276,11 @@ to create a web API (Application Programming Interface)
 that will let people around the world access and use your data.
 
 [^1]: A promising new development is PyScript, 
-first announced at PyCon US 2022. 
-PyScript is a Python interpreter plus some of the most popular libraries, 
-bundled together and compiled into Web Assembly language (WASM). 
-There are other languages also finding their way into the browser via WASM, 
-such as Rust.
+  first announced at PyCon US 2022. 
+  PyScript is a Python interpreter plus some of the most popular libraries, 
+  bundled together and compiled into Web Assembly language (WASM). 
+  There are other languages also finding their way into the browser via WASM, 
+  such as Rust.
 
 If you are not programming in a language that is native to mobile devices
 (e.g Swift for iOS or Java for Android),
@@ -328,19 +328,20 @@ and mobile apps possible as well,
 whereas Swift's primary focus is macOS applications[^2].
 
 [^2]: The author has a bias against heavy investment in a language 
-that can depends on a parent company for its existence. 
-For example, Apple could decide that they're dropping Swift 
-as the preferred language for their platforms. 
-Java's corporate sponsor, Oracle, 
-has engaged in shady practices in the past, including 
-[update installer that would try to install unwanted applications ('bloatware' or 'crapware) on its users' systems](https://www.zdnet.com/article/a-close-look-at-how-oracle-installs-deceptive-software-with-java-updates/).
-Visual Basic 6 (VB6) was very popular, 
-allowing scientists, business people and hobbyists to create 
-their own Windows applications. 
-Microsoft's shift to the .NET platform 
-effectively orphaned any development of VB6 programs.
+  that can depends on a parent company for its existence. 
+  For example, Apple could decide that they're dropping Swift 
+  as the preferred language for their platforms. 
+  Java's corporate sponsor, Oracle, 
+  has engaged in shady practices in the past, including 
+  [update installer that would try to install unwanted applications ('bloatware' or 'crapware) on its users' systems](https://www.zdnet.com/article/a-close-look-at-how-oracle-installs-deceptive-software-with-java-updates/).
+  Visual Basic 6 (VB6) was very popular, 
+  allowing scientists, business people and hobbyists to create 
+  their own Windows applications. 
+  Microsoft's shift to the .NET platform 
+  effectively orphaned any development of VB6 programs.
+
   Using one of these languages can still be the right choice for you,
-but go in with eyes open.
+  but go in with eyes open.
 
 If you are also interested in web programming as well, 
 [Electron apps written with JavaScript](https://www.electronjs.org) 
