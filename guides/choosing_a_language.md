@@ -275,7 +275,7 @@ you can use one of these frameworks
 to create a web API (Application Programming Interface) 
 that will let people around the world access and use your data.
 
-[^1] A promising new development is PyScript, first announced at PyCon US 2022. PyScript is a Python interpreter plus some of the most popular libraries, bundled together and compiled into Web Assembly language (WASM). There are other languages also finding their way into the browser via WASM, such as Rust.
+[^1]: A promising new development is PyScript, first announced at PyCon US 2022. PyScript is a Python interpreter plus some of the most popular libraries, bundled together and compiled into Web Assembly language (WASM). There are other languages also finding their way into the browser via WASM, such as Rust.
 
 If you are not programming in a language that is native to mobile devices
 (e.g Swift for iOS or Java for Android),
