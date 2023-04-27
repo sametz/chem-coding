@@ -339,7 +339,6 @@ whereas Swift's primary focus is macOS applications[^2].
   their own Windows applications. 
   Microsoft's shift to the .NET platform 
   effectively orphaned any development of VB6 programs.
-
   Using one of these languages can still be the right choice for you,
   but go in with eyes open.
 
