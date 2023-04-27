@@ -1,8 +1,6 @@
 # How to Choose a Programming Language
 ## For Chemists and the Chemistry-Adjacent
 
-{TODO: constantly re-evaluate and re-write with the target audience in mind. This is for them, not you.}
-
 ### Table of Contents
 
 - [How to Choose a Programming Language](#how-to-choose-a-programming-language)
