@@ -40,10 +40,6 @@ This guide will mention the most commonly-encountered languages
 that are either particularly useful to chemists, 
 or are particularly well suited for people just starting to learn programming.
 
-{TODO: maybe state somewhere what languages you're including, 
-based on some criterion such as StackOverflow annual surveys. 
-Don't need to include the more fringe languages such as Haskell etc.}
-
 Whatever language you choose, 
 once you dive into it you will also learn tools, skills and habits 
 that are not language-specific. 
@@ -166,8 +162,6 @@ You will find more ML/AI resources that use Python than any other language. Ther
 
 ### Systems Programming and Scripting
 
-{TODO: section for command-line applications?}
-
 If your interest is working with the nuts and bolts of a computer system
 (working with files and directories, scheduling automated tasks, etc.),
 Python is a great place to start. 
@@ -242,7 +236,7 @@ An example of this is
 [the `numpy` library](https://numpy.org) for numerical computation. 
 With optimization, Python can often be fast enough for your needs. 
 
-There are libraries that can help speed up your code, 
+There are libraries that can help speed up your Python code, 
 e.g. by [implementing "just-in-time" compiling](https://numba.pydata.org) 
 or [GPU acceleration](https://cupy.dev).
 There is also a version of Python, 
@@ -272,7 +266,7 @@ It can be used for both "front-end" web development
 and in "back-end" development (setting up a web server). 
 Most beginners will be interested in the front-end work of creating a website, and let a web hosting service take care of the back end.
 
-Python is also a good choice, especially for back-end work.
+Python is also a good choice, especially for back-end work[^1].
 Popular web frameworks include Flask, Django, and FastAPI. 
 For example, 
 if you have data in a database
@@ -280,6 +274,8 @@ that you want to make available over the internet,
 you can use one of these frameworks 
 to create a web API (Application Programming Interface) 
 that will let people around the world access and use your data.
+
+[^1] A promising new development is PyScript, first announced at PyCon US 2022. PyScript is a Python interpreter plus some of the most popular libraries, bundled together and compiled into Web Assembly language (WASM). There are other languages also finding their way into the browser via WASM, such as Rust.
 
 If you are not programming in a language that is native to mobile devices
 (e.g Swift for iOS or Java for Android),
