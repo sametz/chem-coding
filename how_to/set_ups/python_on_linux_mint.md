@@ -4,6 +4,8 @@ However, Linux is trickier (e.g. compiling from python.org download).
 
 Instead, I'm following the setup described in *Publishing Python Packages*
 by Dane Hillard. 
+This may be no less trickier than compiling the python.org download, 
+but it's and opportunity for me to test the entire toolchain of *PPP*.
 
 [^1]: See also: [PythonBytes clip on his article](https://www.youtube.com/live/9wU19yAB2mM?feature=share&t=1112).
 
@@ -87,3 +89,17 @@ by Dane Hillard.
    ```
 
 ## Install `python-launcher`
+
+Mint uses `apt-get` to install packages,
+but [the installation guide] (https://python-launcher.app/install/)
+for `python-launcher` doesn't recognize that option,
+and `apt-cache search python-launcher` turns up nothing.
+The install guide has an option for downloading a binary.
+
+Instead, Hillard points out that you can install it with Rust,
+which I wanted to install anyways. So:
+
+1. Install Rust, if needed.
+2. Run `cargo install python-launcher` from the command line.
+3. Run `py --list` from the command line 
+   to verify that all your installed python versions are listed.
