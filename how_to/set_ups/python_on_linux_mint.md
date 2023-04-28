@@ -59,4 +59,31 @@ by Dane Hillard.
    asdf install python 3.8.16
    ```
    etc.
+5. Check the installations with `asdf list python`. 
+   It will list what versions are installed.
+6. Put these python versions on $PATH:
+   ```bash
+   asdf global python 3.11.3 3.10.11 3.9.16 3.8.16
+   ```5. Check the installations with `asdf list python`. 
+   It will list what versions are installed.
+6. Put these python versions on $PATH:
+   ```bash
+   asdf global python 3.11.3 3.10.11 3.9.16 3.8.16
+   ```5. Check the installations with `asdf list python`. 
+   It will list what versions are installed.
+6. Put these python versions on $PATH:
+   ```bash
+   asdf global python 3.11.3 3.10.11 3.9.16 3.8.16
+   ```5. Check the installations with `asdf list python`. 
+   It will list what versions are installed.
+6. Put these python versions on $PATH:
+   ```bash
+   asdf global python 3.11.3 3.10.11 3.9.16 3.8.16
+   ```5. Check the installations with `asdf list python`. 
+   It will list what versions are installed.
+6. Put these python versions on $PATH:
+   ```bash
+   asdf global python 3.11.3 3.10.11 3.9.16 3.8.16
+   ```
 
+## Install `python-launcher`
