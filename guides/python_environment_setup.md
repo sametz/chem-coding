@@ -1,5 +1,7 @@
 # Creating a Python Environment
 
+{TODO: test everything under Windows. Details may differ, e.g. "py" vs. "python" on the command line}
+
 This is a guide on how to set up your computer for Python programming. 
 The goal is to enable you to create a python "environment" 
 for each of your projects, 
@@ -12,6 +14,14 @@ If you start using multiple methods,
 you run the risk of becoming XKCD \#1987:
 
 ![XKCD #1987](https://imgs.xkcd.com/comics/python_environment.png)
+
+This guide is focused on macOS and Windows installations.
+Linux can be trickier.
+One warning for Linux users:
+If you want to create virtual environments using `venv`, 
+as described in this guide,
+some Linux distributions don't include `venv` with python,
+and you'll have to install it separately.
 
 ## Contents
 
@@ -94,7 +104,9 @@ I will recommend two ways to go about this:
       precedes the cursor where you start typing.
       Its exact text will be specific to your computer 
       and where you opened the CLI from.
-      However, your prompt should include "`(base)`", which indicates which conda environment you're currently using (here, the default "base" environment). 
+      However, your prompt should include "`(base)`", 
+      which indicates which conda environment you're currently using 
+      (here, the default "base" environment). 
       For the terminal commands below, 
       "`(environmentname)$`" represents the command prompt 
       (and is not part of the commands you are entering in the CLI).
@@ -118,17 +130,27 @@ Although you can work from the base conda environment,
 for your own projects you will want to create an isolated environment.
 You'll be able to install only what you need for that project,
 and you can specify the versions of all the libraries to avoid conflicts.
-It is very easy to create environments with conda, and switch between environments as needed
+It is very easy to create environments with conda, 
+and switch between environments as needed.
 
-A detailed guide can be found on the [Anaconda website](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). To get started, here are the most useful commands:
+A detailed guide can be found on the 
+[Anaconda website](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). 
+To get started, here are the most useful commands:
 
 - `conda create` is used to create a new environment.
-  For example, if you were taking the Be/Bi 103 course and wanted to create an environment for it, you could do the following:
+  For example, 
+  if you were taking the Be/Bi 103 course 
+  and wanted to create an environment for it, 
+  you could do the following:
   ```bash
   (base)$ conda create --name bebi103
   ```
-  However, that course requires that Python 3.9 is used, to make sure that all their code runs as originally written. Most likely, when you downloaded conda, you chose the most recent python for the base conda environment.
-  If you know you need a specific python version, include it when you create the environment:
+  However, that course requires that Python 3.9 is used, 
+  to make sure that all their code runs as originally written. 
+  Most likely, when you downloaded conda, 
+  you chose the most recent python for the base conda environment.
+  If you know you need a specific python version, 
+  include it when you create the environment:
   ```bash
   (base)$ conda create --name bebi103 python=3.9
   ```
@@ -186,7 +208,7 @@ To "pip install" packages into your environment:
    ```
    python -m pip install name_of_package
    ```
-   **Note the use of `python -m`. 
+   **Note the use of `python -m`.** 
    If you just `pip install` a package, 
    [it may not get installed where you intended](https://snarky.ca/why-you-should-use-python-m-pip/).
 
@@ -197,9 +219,103 @@ To "pip install" packages into your environment:
 
 ## Installing Python from python.org
 
+[This guide](https://pythontest.com/python/installing-python-3-11/) from Brian Okken covers the basic installation:
+1. Go to [python.org](https://www.python.org/).
+2. Hover over "Downloads". If you want the most recent release of Python,
+   a button for its download will appear in the popup window.
+   If you want to install a different Python version,
+   or additional Python versions,
+   you can click on "view the full list of downloads",
+   and download a specific version from their list.
+3. Run the installer.
+
 ### Creating and Using a `venv` Virtual Environment
+A new user searching online can find many, conflicting ways 
+to create a virtual environment. 
+The current standard method is to 
+[use the `venv` command](https://docs.python.org/3/library/venv.html). 
+Ignore any guides that use the `virtualenv` command instead—
+these are out of date.
+
+Whereas conda environments can be used across projects,
+it is most common to include venv environments 
+either in the top level of your project folder, 
+or one folder above it. 
+The former seems to be more common. 
+So, if your project's code is contained in the directory `my_awesome_project`:
+
+1. Open a terminal with `my_awesome_project` as the current working directory.
+   For example, on macOS/linux using a bash terminal
+   you can switch to that directory using `cd`, 
+   then double-check that you are in the right place using `pwd`:
+   ```bash
+   $ cd ~/my/path/to/my_awesome_project
+   $ pwd
+   /Users/myname/my/path/to/my_awesome_project
+   ```
+2. From the command line, enter:
+   ```bash
+   python -m venv .venv
+   ```
+   This creates a folder named .venv within my_awesome_project 
+   that contains your virtual environment. 
+   This would use your default python version. 
+   If you want to use another installed python version for a project, 
+   you can specify it like:
+   ```bash
+   python3.9 -m venv .venv
+   ```
+   > Naming the environment `.venv` or `.env` is a common convention,
+   > but you can use whatever name you want.
+   > Note that file names that begin with "." 
+   > are often hidden from you by default.
+   > It's a way of denoting files 
+   > that you usually don't want to modify directly,
+   > e.g. critical system files are often named this way 
+   > to protect them from accidental corruption by users.
+   > To see hidden folders using your OS's file browser,
+   > see [this guide](https://www.sonarworks.com/support/sonarworks/360003040160-Troubleshooting/360003204140-Troubleshooting/5005750481554-How-to-show-hidden-files-Mac-and-Windows-).
+   > To include hidden files when using `ls` from a bash command line,
+   > use `ls -a`.
+
+3. Activate the virtual environment: 
+   assuming a virtual environment folder named `.venv` 
+   (as in the previous step):
+   macOS:
+   ```bash
+   $ source .venv/bin/activate
+   ```
+
+   Windows cmd.exe command line:
+   ```cmd
+   $ .venv\Scripts\activate.bat
+   ```
+
+   Windows Powershell:
+   ```powershell
+   $ .venv\Scripts\Activate.ps1
+   ```
+
+   To deactivate the environment and return to using your system python:
+   ```bash
+   deactivate
+   ```
 
 ### Installing Packages Into Your Environment
+
+To "pip install" packages into your environment:
+
+1. Activate the environment as described in the previous section.
+2. Check that you are using the python inside your virtual environment, 
+   using `which python`(macOS) or `where python`(Windows).
+3. To install a python package into your current environment:
+   ```
+   python -m pip install name_of_package
+   ```
+   **Note the use of `python -m`.** 
+   If you just `pip install` a package, 
+   [it may not get installed where you intended](https://snarky.ca/why-you-should-use-python-m-pip/).
+
 ## Other Options
 
 - On macOS, homebrew can be used to install Python. 
