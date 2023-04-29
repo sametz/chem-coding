@@ -74,7 +74,8 @@ I will recommend two ways to go about this:
 
    [Caltech's Be/Bi103 course](https://bebi103a.github.io/lessons/00/index.html) 
    (Introduction to Data Analysis in the Biological Sciences) 
-   has great guides for setting up a python environment via Anaconda. The key steps are summarized below.
+   has great guides for setting up a python environment via Anaconda. 
+   The key steps are summarized below.
 
    1. Download the 
       [Anaconda](https://www.anaconda.com/download/) 
@@ -89,19 +90,27 @@ I will recommend two ways to go about this:
    2. Open a command-line interface (CLI). 
       {TODO: check on windows if you need to use the anaconda cli}
       If you are not familiar with the CLI,
-      note that a command prompt ending in '$' precedes the cursor where you start typing.
-      Your prompt should include `(base)`, which indicates which conda environment you're currently using (here, the default "base" environment). Creating your own conda environments is covered below.
+      note that a command prompt ending in "`$`" 
+      precedes the cursor where you start typing.
+      Its exact text will be specific to your computer 
+      and where you opened the CLI from.
+      However, your prompt should include "`(base)`", which indicates which conda environment you're currently using (here, the default "base" environment). 
+      For the terminal commands below, 
+      "`(environmentname)$`" represents the command prompt 
+      (and is not part of the commands you are entering in the CLI).
    3. Update your base conda installation and environment. 
-      It is a good idea to run the following commands not only after the initial installation, but every few weeks-to-months. 
+      It is a good idea to run the following commands 
+      not only after the initial installation, 
+      but every few weeks-to-months. 
       {TODO: footnote warning on what can happen if this is postponed too long}
       ```bash
-      conda update conda
+      (base)$ conda update conda
       ```
       Follow the prompts to update conda itself, and then:
       ```bash
-      conda update --all
+      (base)$ conda update --all
       ```
-      to update all the installed libraries.
+      and follow the prompts to update all the installed libraries.
 
 ### Creating and Using a `conda` Environment
 
@@ -116,12 +125,12 @@ A detailed guide can be found on the [Anaconda website](https://conda.io/project
 - `conda create` is used to create a new environment.
   For example, if you were taking the Be/Bi 103 course and wanted to create an environment for it, you could do the following:
   ```bash
-  conda create --name bebi103
+  (base)$ conda create --name bebi103
   ```
   However, that course requires that Python 3.9 is used, to make sure that all their code runs as originally written. Most likely, when you downloaded conda, you chose the most recent python for the base conda environment.
   If you know you need a specific python version, include it when you create the environment:
   ```bash
-  conda create --name bebi103 python=3.9
+  (base)$ conda create --name bebi103 python=3.9
   ```
   You can also add specific packages that you want via this command, but it's not necessary. Installing packages is covered in the next section.
 - `conda env list` will list all your environments, e.g.:
@@ -140,6 +149,7 @@ A detailed guide can be found on the [Anaconda website](https://conda.io/project
   (base)$ conda activate bebi103
   (bebi103)$
   ```
+- `conda list` will list all the packages installed in the active environment.
 
 ### Installing Packages Into Your Environment
 
