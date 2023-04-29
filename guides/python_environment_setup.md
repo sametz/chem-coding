@@ -153,6 +153,48 @@ A detailed guide can be found on the [Anaconda website](https://conda.io/project
 
 ### Installing Packages Into Your Environment
 
+An important difference when using conda environments is that, 
+as much as possible, 
+packages should **not** be installed using a `pip install`-like command, 
+which is normally how Python packages are installed. 
+For the packages you want to install, 
+search online for installation instructions 
+and see if there is a conda option.
+
+If there is, 
+often `conda install {packagename}` works,
+but sometimes a specific "channel" must be listed 
+for conda to find the package.
+For example, to install `pandas`, 
+[follow the online instructions](https://anaconda.org/anaconda/pandas) 
+to install it from the "anaconda" channel:
+```bash
+(bebi103)$ conda install -c anaconda pandas
+```
+
+Some packages do not have a conda installer. 
+To "pip install" packages into your environment:
+
+1. Make sure `pip` is installed in your current environment 
+   (and not just the base environment), e.g. 
+   ```bash
+   (current_environment)$ conda install -n bebi103 pip
+   ```
+   This will install `pip` specifically to the bebi103 environment, 
+   regardless of whatever `current_environment` may be active.
+2. To install a python package into your current environment:
+   ```
+   python -m pip install name_of_package
+   ```
+   **Note the use of `python -m`. 
+   If you just `pip install` a package, 
+   [it may not get installed where you intended](https://snarky.ca/why-you-should-use-python-m-pip/).
+
+   You can always find out which python interpreter you're currently using 
+   by entering `which python`(macOS/linux) or `where python`(Windows) 
+   in the command line. 
+   Then, `python -m pip install` will install packages to that environment.
+
 ## Installing Python from python.org
 
 ### Creating and Using a `venv` Virtual Environment
