@@ -296,6 +296,14 @@ So, if your project's code is contained in the directory `my_awesome_project`:
    $ .venv\Scripts\Activate.ps1
    ```
 
+   Note: if PowerShell gives an error message saying running scripts is disabled,
+   enter the following command in PowerShell[^1]:
+
+   [^1]: See [the python venv documentation]() for details.
+
+   ```powershell
+   $ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+   ```
    To deactivate the environment and return to using your system python:
    ```bash
    deactivate
