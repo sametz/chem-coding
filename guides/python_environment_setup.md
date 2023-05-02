@@ -254,6 +254,10 @@ To "pip install" packages into your environment:
    you can click on "view the full list of downloads",
    and download a specific version from their list.
 3. Run the installer.
+     - **Windows users**: Check out Okken's guide. 
+       Specifically, don't click too quickly through the installer dialog. 
+       When you reach “Advanced Features”,  
+       check the box for “Add Python to environment variables”.
 
 ### Creating and Using a `venv` Virtual Environment
 A new user searching online can find many, conflicting ways 
