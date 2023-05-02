@@ -1,8 +1,21 @@
 # Creating a Python Environment
 
-{TODO: test everything under Windows. Details may differ, e.g. "py" vs. "python" on the command line}
+## Contents
 
-This is a guide on how to set up your computer for Python programming. 
+- [Creating a Python Environment](#creating-a-python-environment)
+  - [Contents](#contents)
+  - [Introduction](#introduction)
+  - [Why Python Environments?](#why-python-environments)
+  - [Option 1: Installing Anaconda or Miniconda](#option-1-installing-anaconda-or-miniconda)
+    - [Creating and Using a `conda` Environment](#creating-and-using-a-conda-environment)
+    - [Installing Packages Into Your `conda` Environment](#installing-packages-into-your-conda-environment)
+  - [Option 2: Installing Python from python.org](#option-2-installing-python-from-pythonorg)
+    - [Creating and Using a `venv` Virtual Environment](#creating-and-using-a-venv-virtual-environment)
+    - [Installing Packages Into Your `venv` Environment](#installing-packages-into-your-venv-environment)
+  - [Other Options](#other-options)
+
+## Introduction
+
 The goal is to enable you to create a python "environment" 
 for each of your projects, 
 tailored to its requirements.
@@ -23,22 +36,21 @@ as described in this guide,
 some Linux distributions don't include `venv` with python,
 and you'll have to install it separately.
 
-## Contents
-
 ## Why Python Environments?
 
 You may think, 
 "my computer already has Python on it. Why can't I just use that?"
 The problem is that this "system Python" is used by your operating system,
-and if you try to customize it something might break.
-It's the ability to customize Python 
+and if you try to customize it by installing Python packages 
+something might break.
+It's Python's extensibility
 that makes it so powerful and so widely useful, 
 so it is highly likely that you will want 
-to start installing additional libraries at some point.
+to install additional libraries at some point.
+
 For example, if you want to do data analysis and visualization, 
 you are very early on going to be installing libraries 
 such as `pandas` and `matplotlib`.
-
 If you are following a tutorial, 
 and at some point it the instructions say something like:
 
@@ -55,10 +67,11 @@ conda install pandas
 you will want to make sure you are installing these 
 into a Python environment of your own, separate from system Python.
 
-So, at this point you may start Googling how to go about downloading Python 
-and creating environments. 
-If you do, you'll probably find that there's a lot of ways to do this. 
-I will recommend two ways to go about this:
+At this point, if you started searching online
+how to go about downloading Python 
+and creating environments, 
+you'd probably find many, conflicting, recommendations on how to do this. 
+I will recommend two methods in this guide:
 
 1. Installing Anaconda (or miniconda), 
    and managing virtual environments with `conda`.
@@ -72,7 +85,7 @@ I will recommend two ways to go about this:
    and creating virtual environments with `venv`.
    This is a minimalist approach.
 
-## Installing Anaconda or Miniconda
+## Option 1: Installing Anaconda or Miniconda
 
    A full Anaconda installs a lot of stuff on your computer 
    that you may not need. 
@@ -173,7 +186,7 @@ To get started, here are the most useful commands:
   ```
 - `conda list` will list all the packages installed in the active environment.
 
-### Installing Packages Into Your Environment
+### Installing Packages Into Your `conda` Environment
 
 An important difference when using conda environments is that, 
 as much as possible, 
@@ -217,7 +230,7 @@ To "pip install" packages into your environment:
    in the command line. 
    Then, `python -m pip install` will install packages to that environment.
 
-## Installing Python from python.org
+## Option 2: Installing Python from python.org
 
 [This guide](https://pythontest.com/python/installing-python-3-11/) from Brian Okken covers the basic installation:
 1. Go to [python.org](https://www.python.org/).
@@ -309,7 +322,7 @@ So, if your project's code is contained in the directory `my_awesome_project`:
    deactivate
    ```
 
-### Installing Packages Into Your Environment
+### Installing Packages Into Your `venv` Environment
 
 To "pip install" packages into your environment:
 
