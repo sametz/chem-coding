@@ -111,9 +111,9 @@ I will recommend two methods in this guide:
         Unless you know you want to use it, skip this—
         you can always install it later if you want.
    2. Open a command-line interface (CLI). 
-      {TODO: check on windows if you need to use the anaconda cli}
-      If you are not familiar with the CLI,
-      note that a command prompt ending in "`$`" 
+      - On macOS or Linux,
+      where a bash-like command line is standard,
+      a command prompt ending in "`$`" 
       precedes the cursor where you start typing.
       Its exact text will be specific to your computer 
       and where you opened the CLI from.
@@ -123,11 +123,24 @@ I will recommend two methods in this guide:
       For the terminal commands below, 
       "`(environmentname)$`" represents the command prompt 
       (and is not part of the commands you are entering in the CLI).
+      - Windows users should use the "Anaconda Prompt" as the CLI. 
+      This is similar to Windows' "command prompt" CLI, 
+      but with the redirections ("PATH") to conda libraries 
+      automatically set up for you. 
+      You can enter "anaconda prompt" into the Windows search bar 
+      to find this application.
    3. Update your base conda installation and environment. 
       It is a good idea to run the following commands 
       not only after the initial installation, 
-      but every few weeks-to-months. 
-      {TODO: footnote warning on what can happen if this is postponed too long}
+      but every few weeks-to-months[^1]. 
+
+      [^1]: When the author returned to his office computer 
+      after COVID remote working ended, 
+      its `conda` was so far out of date 
+      that `conda update conda` would no longer work. 
+      The `conda` updater needed a newer version of python, which could not be updated using the old `conda` version—Catch 22.
+      A complete uninstall and reinstall of Anaconda was required.
+
       ```bash
       (base)$ conda update conda
       ```
@@ -310,9 +323,9 @@ So, if your project's code is contained in the directory `my_awesome_project`:
    ```
 
    Note: if PowerShell gives an error message saying running scripts is disabled,
-   enter the following command in PowerShell[^1]:
+   enter the following command in PowerShell[^2]:
 
-   [^1]: See [the python venv documentation]() for details.
+   [^2]: See [the python venv documentation]() for details.
 
    ```powershell
    $ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
