@@ -125,7 +125,7 @@ I will recommend two methods in this guide:
       (and is not part of the commands you are entering in the CLI).
       - Windows users should use the "Anaconda Prompt" as the CLI. 
       This is similar to Windows' "command prompt" CLI, 
-      but with the redirections ("PATH") to conda libraries 
+      but with redirections ("PATH") to conda libraries 
       automatically set up for you. 
       You can enter "anaconda prompt" into the Windows search bar 
       to find this application.
@@ -198,6 +198,19 @@ To get started, here are the most useful commands:
   (bebi103)$
   ```
 - `conda list` will list all the packages installed in the active environment.
+
+-  To deactivate the environment and return to using your base conda python:
+   ```bash
+   (bebi103)$ deactivate
+   (base)
+   ```
+  - If you are already in your base conda environment, and you `deactivate`,
+    you may exit conda completely.
+    You'll no longer see an environment name in parentheses,
+    and you'll be using whatever the non-conda default python is.
+    If you didn't intend to do this,
+    you can use `conda activate base` to go back.
+
 
 ### Installing Packages Into Your `conda` Environment
 
